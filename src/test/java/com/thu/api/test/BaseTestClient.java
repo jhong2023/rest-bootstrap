@@ -18,12 +18,12 @@ public abstract class BaseTestClient extends JerseyTest {
 	
 	
 	
-	public static final String CONTEXT_PATH = "/restv2";
+	public static final String CONTEXT_PATH = "/rest";
 	
 	public BaseTestClient() {
 		super(new WebAppDescriptor.Builder("com.thu.api")
         .contextPath(CONTEXT_PATH)
-        .contextParam("contextConfigLocation", "/applicationContext.xml")
+        .contextParam("contextConfigLocation", "/test-applicationContext.xml")
         .servletClass(SpringServlet.class)
         .contextListenerClass(ContextLoaderListener.class)
         .build());
