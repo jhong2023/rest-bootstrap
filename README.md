@@ -1,6 +1,10 @@
 rest-bootstrap
 ==============
 
-A rest service bootstrap to help people easisy setup run / test environment. 
+A rest service framework for fast and easy environment setup.
 
-It uses Spring, Jersey, Spring JPA, Hiberate.
+It is based on Spring, Jersey, Spring JPA, Hiberate.
+
+Build and test it with:
+mvn install
+
